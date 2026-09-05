@@ -1,286 +1,50 @@
 ⚡ HDB — Human Debug Bridge
 
-<p align="center">██╗  ██╗██████╗ ██████╗
+<p align="center">
+  <img src="https://img.shields.io/badge/HDB-Human%20Debug%20Bridge-black?style=for-the-badge&logo=android" alt="HDB">
+  <img src="https://img.shields.io/badge/Platform-Android-black?style=for-the-badge&logo=android" alt="Android">
+  <img src="https://img.shields.io/badge/Terminal-Termux-black?style=for-the-badge&logo=gnu-bash" alt="Termux">
+  <img src="https://img.shields.io/badge/Language-Python%20%2B%20Bash-black?style=for-the-badge&logo=python" alt="Python Bash">
+</p><p align="center">
+  <b>⚡ A modular command-line toolkit built for Android + Termux</b>
+</p><p align="center">
+  <code>DEBUG • CONTROL • AUTOMATE • EXPERIMENT</code>
+</p>---
+
+🖥️ HDB
+
+██╗  ██╗██████╗ ██████╗
 ██║  ██║██╔══██╗██╔══██╗
 ███████║██║  ██║██████╔╝
 ██╔══██║██║  ██║██╔══██╗
 ██║  ██║██████╔╝██████╔╝
 ╚═╝  ╚═╝╚═════╝ ╚═════╝
 
-"Human Debug Bridge"
+        HUMAN DEBUG BRIDGE
+              H D B
 
-A Terminal-Based Security & Debugging Toolkit for Termux
+HDB (Human Debug Bridge) is an experimental modular toolkit designed around Android, Termux, Python and Bash.
 
-"⚡ Explore • 🔍 Debug • 🛠️ Test • 🧪 Learn"
+The project uses a central launcher to organize multiple utilities and experimental modules from one interface.
 
-</p>---
-
-🧠 About HDB
-
-HDB — Human Debug Bridge is a terminal-oriented toolkit designed for Android/Termux environments.
-
-The project brings multiple utilities together behind a single command-line interface, making it easier to launch, test and experiment with different scripts without manually navigating through every directory.
-
-             ┌─────────────────────────┐
-             │          HDB             │
-             │   Human Debug Bridge     │
-             └────────────┬────────────┘
-                          │
-          ┌───────────────┼───────────────┐
-          │               │               │
-       Network          System          Tools
-          │               │               │
-      ┌───┴───┐       ┌───┴───┐       ┌───┴───┐
-      │ Scan  │       │ Debug │       │ Utils │
-      │ Test  │       │ Check │       │ Apps  │
-      └───────┘       └───────┘       └───────┘
+«⚠️ HDB is an experimental project. Some modules are unfinished, legacy, or require additional dependencies.»
 
 ---
 
-⚡ Features
-
-🖥️ Terminal Interface
-
-HDB provides a centralized CLI interface for launching project utilities.
-
-╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮
-┃       ⚡ HDB TERMINAL        ┃
-┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
-┃  [1] Network Tools           ┃
-┃  [2] System Tools            ┃
-┃  [3] Utilities               ┃
-┃  [4] Information             ┃
-┃  [0] Exit                    ┃
-╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯
-
-🔍 Debugging
-
-Utilities can be used for:
-
-- Network diagnostics
-- Local environment inspection
-- Connectivity testing
-- Script debugging
-- Termux experimentation
-- Development testing
-
-🧪 Modular Architecture
-
-HDB is designed around individual tools.
-
-HDB/
-├── HDB.py
-├── Tools/
-│   ├── NetScanner/
-│   ├── ...
-│   └── ...
-├── Music/
-├── *.sh
-└── README.md
-
-This makes it possible to add new utilities without rebuilding the entire project.
-
----
-
-📱 Platform
-
-HDB is primarily designed for:
-
-Android
-   │
-   └── Termux
-         │
-         ├── Python
-         ├── Bash
-         └── Linux utilities
-
-Recommended Environment
-
-Component| Requirement
-OS| Android
-Terminal| Termux
-Python| 3.x
-Shell| Bash
-Architecture| ARM / ARM64
-Internet| Recommended
-
----
-
-🚀 Installation
-
-1. Install Termux
-
-Use a trusted and current Termux distribution.
-
-Then update packages:
-
-pkg update
-pkg upgrade
-
-Install the basic requirements:
-
-pkg install python git
-
----
-
-2. Clone HDB
-
-git clone https://github.com/banban965/HDB.git
-
-Enter the directory:
-
-cd HDB
-
----
-
-3. Install Python dependency
-
-python -m pip install colorama
-
----
-
-▶️ Start HDB
-
-Run:
-
-python HDB.py
-
-If the project provides an executable shell launcher:
-
-bash app.sh
-
----
-
-🧰 Tool Architecture
-
-HDB follows a modular structure.
-
-                 HDB
-                  │
-        ┌─────────┴─────────┐
-        │                   │
-      Core                Tools
-        │                   │
-      HDB.py        ┌───────┼───────┐
-                    │       │       │
-                 Network  System   Utility
-
-Every tool should ideally remain independent.
-
-This allows individual modules to be tested without affecting the entire launcher.
-
----
-
-🌐 Network Laboratory
-
-Network-related utilities are intended for:
-
-- Your own devices
-- Your own network
-- Authorized security laboratories
-- Educational environments
-
-Example workflow:
-
-Device
-  │
-  ▼
-Local Network
-  │
-  ▼
-HDB Diagnostic Tool
-  │
-  ├── Discovery
-  ├── Connectivity
-  └── Diagnostics
-
-«Important: Only test systems and networks you own or have explicit permission to test.»
-
----
-
-🛡️ Security Philosophy
-
-HDB is intended as a learning and debugging environment.
-
-The project should follow these principles:
-
-┌─────────────────────────────┐
-│       HDB SECURITY          │
-├─────────────────────────────┤
-│  ✔ Authorized testing       │
-│  ✔ Local laboratories       │
-│  ✔ Educational research     │
-│  ✔ Defensive debugging      │
-│  ✔ Personal devices         │
-│                             │
-│  ✘ Unauthorized access     │
-│  ✘ Credential theft        │
-│  ✘ Malware deployment      │
-│  ✘ Destructive activity    │
-└─────────────────────────────┘
-
----
-
-🔧 Development
-
-Want to add a new HDB module?
-
-Create a directory:
-
-mkdir -p Tools/MyTool
-
-Create your Python script:
-
-nano Tools/MyTool/app.py
-
-Then connect it to the launcher.
-
-Recommended module structure:
-
-Tools/
-└── MyTool/
-    ├── app.py
-    ├── README.md
-    └── requirements.txt
-
----
-
-🐛 Debugging HDB
-
-If something does not work, first check:
-
-python --version
-
-Then:
-
-pip --version
-
-Check the project:
-
-pwd
-ls
-
-Check Python syntax:
-
-python -m py_compile HDB.py
-
-This is useful for detecting syntax errors before launching the application.
-
----
-
-⚙️ Dependency Check
-
-Check whether Colorama is installed:
-
-python -c "import colorama; print('Colorama: OK')"
-
-Expected:
-
-Colorama: OK
-
-If it fails:
-
-python -m pip install colorama
+✦ Features
+
+- ⚡ Terminal-based launcher
+- 🧩 Modular tool structure
+- 🐍 Python utilities
+- 🐚 Bash utilities
+- 📡 Network-related utilities
+- 📦 Compression utilities
+- 🌐 Flask-based experiments
+- 📱 Android/Termux-oriented tools
+- 🧠 Experimental AI-related module
+- ⚙️ Settings module
+- 🎵 Optional terminal music
+- 🔧 Easy-to-expand "Tools/" architecture
 
 ---
 
@@ -289,149 +53,565 @@ python -m pip install colorama
 HDB/
 │
 ├── HDB.py
+├── Music.mp3
+├── app.sh
+├── TigerVirus.sh
 │
-├── Tools/
-│   ├── NetScanner/
-│   ├── ...
-│   └── ...
+├── Settings/
+│   └── S.py
 │
-├── Music/
-│
-├── *.sh
-│
-├── README.md
-└── LICENSE
+└── Tools/
+    │
+    ├── Birds/
+    ├── FlaskChat/
+    ├── GhostTrack/
+    ├── HDB/
+    ├── NFD/
+    ├── NanoGen/
+    ├── NetScanner/
+    ├── OP-Compressor/
+    ├── Sms/
+    ├── ThorBrowser/
+    ├── UFIS/
+    ├── UserCollector/
+    ├── WordGenPro/
+    └── ddos/
 
 ---
 
-🧠 Why HDB?
+🚀 Installation
 
-Instead of remembering many commands:
+1. Update Termux
 
-python Tools/Tool1/app.py
-python Tools/Tool2/app.py
-python Tools/Tool3/app.py
-...
+pkg update
+pkg upgrade
 
-HDB provides a central launcher:
+2. Install Git
 
-             HDB
-              │
-      ┌───────┼───────┐
-      ▼       ▼       ▼
-    Tool 1  Tool 2  Tool 3
+pkg install git
 
-One project.
+3. Install Python
 
-Multiple utilities.
+pkg install python
 
-One terminal interface.
+4. Clone HDB
+
+git clone https://github.com/banban965/HDB.git
+
+5. Enter the project
+
+cd HDB
+
+6. Install the main Python dependency
+
+python -m pip install colorama
 
 ---
 
-🧪 Testing
+⚡ Start HDB
 
-Before submitting a new module:
+Run:
 
-[✓] Python syntax
-[✓] Dependencies
-[✓] File paths
-[✓] Termux compatibility
-[✓] Error handling
-[✓] Authorized-use warning
+python HDB.py
 
-Recommended test:
+Or, if the shell launcher is configured for your environment:
+
+bash app.sh
+
+---
+
+🎛️ HDB Launcher
+
+The main launcher is "HDB.py".
+
+Conceptually:
+
+                    ┌──────────────────┐
+                    │      HDB.py      │
+                    │   Main Launcher  │
+                    └────────┬─────────┘
+                             │
+          ┌──────────────────┼──────────────────┐
+          │                  │                  │
+          ▼                  ▼                  ▼
+      Settings/           Tools/            Utilities
+          │                  │                  │
+          ▼                  ▼                  ▼
+        S.py          Python / Bash       Experimental
+
+The launcher provides a central menu for accessing project modules.
+
+---
+
+🧩 Modules
+
+📡 NetScanner
+
+Location:
+
+Tools/NetScanner/
+
+Network-scanning/diagnostic functionality intended for authorized environments and lab networks.
+
+---
+
+🌐 FlaskChat
+
+Location:
+
+Tools/FlaskChat/
+
+Experimental Flask-based chat project.
+
+---
+
+📦 OP-Compressor
+
+Location:
+
+Tools/OP-Compressor/
+
+Compression-related experimental utility.
+
+---
+
+📱 NFD
+
+Location:
+
+Tools/NFD/
+
+Experimental Android/Termux file-transfer project.
+
+---
+
+🧠 NanoGen
+
+Location:
+
+Tools/NanoGen/
+
+Experimental AI-related module.
+
+---
+
+⚡ UFIS
+
+Location:
+
+Tools/UFIS/
+
+Experimental network/internet utility.
+
+---
+
+🌐 ThorBrowser
+
+Location:
+
+Tools/ThorBrowser/
+
+Experimental browser-related module.
+
+---
+
+🐦 Birds
+
+Location:
+
+Tools/Birds/
+
+Experimental directory/web enumeration utility.
+
+---
+
+👻 GhostTrack
+
+Location:
+
+Tools/GhostTrack/
+
+Experimental tracking/network utility.
+
+Use only in environments where you have explicit authorization.
+
+---
+
+🔤 WordGenPro
+
+Location:
+
+Tools/WordGenPro/
+
+Experimental word-generation utility.
+
+---
+
+⚙️ HDB Booster
+
+Location:
+
+Tools/HDB/
+
+Contains the HDB booster-related experimental scripts.
+
+---
+
+⚙️ Settings
+
+Location:
+
+Settings/S.py
+
+Central settings module for the HDB launcher.
+
+---
+
+🖥️ Terminal Preview
+
+Example project interface:
+
+╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮
+┃             ⚡ HDB v1.0              ┃
+┃        HUMAN DEBUG BRIDGE            ┃
+╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯
+
+[01] DDoS
+[02] SMS Bomber
+[03] Android RAT
+[04] Virus Crafter
+[05] CCTV
+[06] IP Tracker
+[07] Birds
+[08] User Phishing
+[09] Word Gen Pro
+[10] UFIS
+[11] OP Compressor
+[12] NFC Drop
+[13] Flask Chat
+[14] NanoGen
+[15] Thor Browser
+[16] HDB Booster
+[17] NetScanner
+[18] GitHub
+[19] Settings
+[20] Exit
+
+HDB >
+
+«⚠️ Some legacy entries shown above are experimental/high-risk concepts and should only be developed or tested in authorized lab environments. Do not use them against other people, devices, accounts, or networks.»
+
+---
+
+🧱 Architecture
+
+HDB follows a simple launcher-based architecture:
+
+                         HDB
+                          │
+                          ▼
+                    ┌───────────┐
+                    │  HDB.py   │
+                    └─────┬─────┘
+                          │
+             ┌────────────┼────────────┐
+             │            │            │
+             ▼            ▼            ▼
+         Settings       Tools       Launcher
+             │            │
+             │       ┌────┴────┐
+             │       │         │
+             ▼       ▼         ▼
+           S.py   Python     Bash
+                    Modules   Modules
+
+Each module can live inside its own directory under "Tools/".
+
+---
+
+🔧 Requirements
+
+Minimum environment:
+
+Android
+Termux
+Python 3
+Git
+Colorama
+
+Some individual modules may require additional packages.
+
+Because HDB is modular, dependencies can differ from one tool to another.
+
+---
+
+🐍 Python
+
+Check your Python version:
+
+python --version
+
+Check pip:
+
+python -m pip --version
+
+Install Colorama:
+
+python -m pip install colorama
+
+---
+
+🔍 Troubleshooting
+
+"ModuleNotFoundError"
+
+Example:
+
+ModuleNotFoundError: No module named 'colorama'
+
+Install the dependency:
+
+python -m pip install colorama
+
+---
+
+Permission denied
+
+Make a shell script executable:
+
+chmod +x app.sh
+
+Then:
+
+./app.sh
+
+---
+
+Python script does not start
+
+Check syntax:
 
 python -m py_compile HDB.py
 
+If there is no output, Python accepted the file syntax.
+
 ---
 
-🔥 Roadmap
+Check project files
+
+find . -maxdepth 3 -type f
+
+---
+
+Check Git status
+
+git status
+
+---
+
+🧪 Development
+
+HDB is designed to be extended through new modules.
+
+A basic module structure can look like:
+
+Tools/
+└── MyTool/
+    ├── main.py
+    ├── README.md
+    └── requirements.txt
+
+Keep modules isolated where possible.
+
+Recommended structure:
+
+MyTool/
+├── main.py
+├── config.py
+├── requirements.txt
+└── README.md
+
+---
+
+🛠️ Recommended Improvements
+
+The project can be improved with:
+
+[ ] requirements.txt
+[ ] Automatic dependency checking
+[ ] Better exception handling
+[ ] Module registry
+[ ] Cleaner launcher architecture
+[ ] Logging system
+[ ] Configuration system
+[ ] Unit tests
+[ ] CI workflow
+[ ] Version management
+[ ] Safer module isolation
+[ ] Better Android/Termux compatibility
+
+---
+
+🚀 Roadmap
+
+HDB 1.x
+
+✓ Central launcher
+✓ Modular Tools directory
+✓ Python modules
+✓ Bash modules
+✓ Settings module
+✓ Termux support
 
 HDB 2.x
 
-- [ ] Better dependency manager
-- [ ] Automatic environment detection
-- [ ] Improved error handling
-- [ ] Better module loader
-- [ ] Configuration system
-- [ ] Logging system
-- [ ] Tool status checker
-- [ ] Plugin architecture
-- [ ] Improved Termux compatibility
-- [ ] Cleaner CLI interface
+[ ] Plugin system
+[ ] Dependency manager
+[ ] Improved CLI
+[ ] Module status detection
+[ ] Error recovery
+[ ] Logging
+[ ] Configuration profiles
 
-Future
+HDB 3.x
 
-HDB
- │
- ├── Core Engine
- ├── Plugin System
- ├── Network Lab
- ├── System Diagnostics
- ├── Security Lab
- └── Developer Utilities
+[ ] Advanced module framework
+[ ] Automated testing
+[ ] Better Android integration
+[ ] Documentation system
+[ ] Module API
 
 ---
 
-🏴 HDB Terminal Style
+🔐 Security & Responsible Use
 
-╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮
-┃              HDB                 ┃
-┃       HUMAN DEBUG BRIDGE         ┃
-┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
-┃                                  ┃
-┃       SYSTEM INITIALIZED         ┃
-┃       TERMINAL READY             ┃
-┃                                  ┃
-┃       [ HDB // ONLINE ]          ┃
-┃                                  ┃
-╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╯
+HDB is intended for:
 
----
+- Your own devices
+- Your own networks
+- Local development
+- Cybersecurity education
+- Authorized testing
+- Controlled laboratory environments
 
-⚠️ Disclaimer
+Do not use security-related modules to:
 
-HDB is provided for educational, debugging, development and authorized security-testing purposes.
+- Access systems without permission
+- Steal credentials
+- Spam users
+- Disrupt networks
+- Deploy malware
+- Track people without consent
+- Damage devices or data
 
 You are responsible for how you use the software.
 
-Do not use HDB against devices, networks, accounts or systems without permission.
+---
 
-The authors are not responsible for misuse or damage caused by the software.
+⚠️ Experimental Modules
+
+Some files in the repository represent older or experimental ideas.
+
+Before distributing HDB publicly, review modules such as:
+
+TigerVirus.sh
+app.sh
+Tools/ddos/
+Tools/Sms/
+
+and either:
+
+1. Remove unsafe functionality
+2. Convert it into a harmless local demo
+3. Restrict it to controlled laboratory testing
+
+The goal is to keep HDB useful as a development and cybersecurity-learning project without turning it into a tool for harming other systems.
 
 ---
 
-👑 Project
+📊 Project Status
 
-Project: HDB
-Full Name: Human Debug Bridge
-Platform: Termux / Android
-Language: Python / Bash
-Category: Security • Debugging • Development • Terminal Tools
-
----
-
-⭐ Support the Project
-
-If HDB is useful to you:
-
-⭐ Star
-🍴 Fork
-🐛 Report bugs
-💡 Suggest features
-🔧 Contribute
+Project      : HDB
+Full Name    : Human Debug Bridge
+Platform     : Android / Termux
+Languages    : Python / Bash
+Architecture : Modular CLI
+Status       : Experimental
 
 ---
 
-⚡ HDB
+🌐 Repository
 
-╔══════════════════════════════════╗
-║                                  ║
-║      HUMAN DEBUG BRIDGE           ║
-║                                  ║
-║       THINK • TEST • DEBUG       ║
-║                                  ║
-╚══════════════════════════════════╝
+<p align="center">GitHub
 
-HDB — Built for the Terminal.
+https://github.com/banban965/HDB
+
+Author
+
+banban965
+
+</p>---
+
+🤝 Contributing
+
+Contributions are welcome.
+
+Before submitting changes:
+
+git status
+
+Test Python syntax:
+
+python -m py_compile HDB.py
+
+Review your changes:
+
+git diff
+
+Then create a commit:
+
+git add .
+git commit -m "Improve HDB"
+
+Push your branch:
+
+git push
+
+For larger changes, document:
+
+• What changed
+• Why it changed
+• Which files were modified
+• How it was tested
+
+---
+
+📜 License
+
+No license file is currently declared in the repository.
+
+If you plan to distribute or reuse HDB, add an explicit open-source license to the repository.
+
+---
+
+⚡ HDB Terminal
+
+╔══════════════════════════════════════════╗
+║                                          ║
+║       ██╗  ██╗██████╗ ██████╗           ║
+║       ██║  ██║██╔══██╗██╔══██╗          ║
+║       ███████║██║  ██║██████╔╝          ║
+║       ██╔══██║██║  ██║██╔══██╗          ║
+║       ██║  ██║██████╔╝██████╔╝          ║
+║       ╚═╝  ╚═╝╚═════╝ ╚═════╝           ║
+║                                          ║
+║          HUMAN DEBUG BRIDGE              ║
+║                                          ║
+║       DEBUG • CONTROL • BUILD            ║
+║                                          ║
+╚══════════════════════════════════════════╝
+
+<p align="center">
+  <b>HDB — Human Debug Bridge</b><br>
+  <code>Built for Android • Termux • Python • Bash</code>
+</p>
